@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas HUBLART - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Fake Terminal Typing Animation -->
+    <div id="fake-terminal" aria-hidden="true">
+        <div class="terminal-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <button id="close-terminal" title="Fermer la console" aria-label="Fermer la console">&times;</button>
+        </div>
+        <pre id="terminal-content"><span class="typed-cursor">|</span></pre>
+    </div>
+    <!-- Code Splash Overlay -->
+    <div id="code-splash" aria-hidden="true"></div>
+    <!-- Language & Theme Toggle -->
+    <div class="language-toggle">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-sun"></i>
+        </button>
+        <div class="lang-buttons">
+            <button id="lang-fr" class="lang-btn active">FR</button>
+            <button id="lang-en" class="lang-btn">EN</button>
+        </div>
+    </div>
+
+    <!-- Header/Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n="name">Lucas HUBLART</h1>
+                <h2 data-i18n="title">Ingénieur Informatique</h2>
+                <div class="social-links">
+                    <a href="mailto:hublartlucas@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/lucas-hublart-239127242" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Lucashblt" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#about" data-i18n="nav_about">À propos</a></li>
+                <li><a href="#skills" data-i18n="nav_skills">Compétences</a></li>
+                <li><a href="#experience" data-i18n="nav_experience">Expérience</a></li>
+                <li><a href="#education" data-i18n="nav_education">Formation</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Projets</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about_title">À propos de moi</h2>
+            <div class="about-content">
+                <p data-i18n="about_text" style="white-space: pre-line;">
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title" data-i18n="skills_title">Compétences</h2>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3 data-i18n="skills_languages">Langages de programmation</h3>
+                    <div class="skill-items">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Kotlin</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Tools -->
+                <div class="skill-category">
+                    <h3 data-i18n="skills_frameworks">Frameworks & Technologies</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Angular</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Android</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Kafka</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+
+                <!-- Other Skills -->
+                <div class="skill-category">
+                        <h3 data-i18n="skills_other">Outils & Méthodologies</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Agile/Scrum</span>
+                            <span class="skill-tag">REST API</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag" data-i18n="skills_ms">Outils Microsoft</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">Android Studio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="experience_title">Expérience professionnelle</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="exp1_title">Stagiaire analyste programmeur</h3>
+                        <span class="timeline-date" data-i18n="exp1_date">Sept. 2024 - Fév. 2025 · 6 mois</span>
+                        <p class="timeline-company" data-i18n="exp1_company">APRR · Stage · Saint-Apollinaire (FR) · Sur site</p>
+                        <ul>
+                            <li data-i18n="exp1_b1">Réalisation de la maintenance applicative</li>
+                            <li data-i18n="exp1_b2">Développement et amélioration d’interfaces graphiques</li>
+                            <li data-i18n="exp1_b3">Contribution à un projet utilisant la Clean Architecture et Kafka pour une gestion efficace des messages</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="exp2_title">Jobs Étudiants</h3>
+                        <span class="timeline-date" data-i18n="exp2_date">2022 - 2024</span>
+                        <p class="timeline-company" data-i18n="exp2_company">Diverses entreprises · Intérimaire</p>
+                        <p data-i18n="exp2_description">Opérateur de production, Employé de restauration, Manutentionnaire, Agent de Tri et Ripeur</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="exp3_title">Stage ouvrier</h3>
+                        <span class="timeline-date" data-i18n="exp3_date">Janv. 2022 - Fév. 2022 · 2 mois</span>
+                        <p class="timeline-company" data-i18n="exp3_company">VERNET BEHRINGER · Stage · Dijon (FR) · Sur site</p>
+                        <p data-i18n="exp3_description">Intégration du service électrique et mécanique dans une entreprise industrielle</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="exp4_title">Employé rayon</h3>
+                        <span class="timeline-date" data-i18n="exp4_date">Juil. 2021 - Août 2021 · 2 mois</span>
+                        <p class="timeline-company" data-i18n="exp4_company">Super U / U Express - Groupe Bourassin · CDD · Arc-sur-Tille (FR) · Sur site</p>
+                        <ul>
+                            <li data-i18n="exp4_b1">Mise en rayon des produits au secteur liquide (boissons, eaux, alcools, etc.)</li>
+                            <li data-i18n="exp4_b2">Vérification des dates de péremption et rotation des stocks</li>
+                            <li data-i18n="exp4_b3">Conseil et orientation des clients</li>
+                            <li data-i18n="exp4_b4">Participation à la tenue du rayon et aux opérations promotionnelles</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title" data-i18n="education_title">Formation</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="edu1_title">Diplôme d'Ingénieur en Informatique</h3>
+                        <span class="timeline-date" data-i18n="edu1_date">2021 - 2026</span>
+                        <p class="timeline-company" data-i18n="edu1_school">Université de Technologie de Belfort-Montbéliard (UTBM) - France</p>
+                        <p data-i18n="edu1_description">
+                            Spécialisation en génie logiciel.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="edu3_title">Semestre d'échange - UQAC</h3>
+                        <span class="timeline-date" data-i18n="edu3_date">Août 2025 - Décembre 2025</span>
+                        <p class="timeline-company" data-i18n="edu3_school">Université du Québec à Chicoutimi (UQAC) - Canada</p>
+                        <p data-i18n="edu3_description">Approfondissement en développement logiciel et du travail en équipe.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="edu2_title">Semestre d'échange - FERIT</h3>
+                        <span class="timeline-date" data-i18n="edu2_date">Février 2023 - Juillet 2023</span>
+                        <p class="timeline-company" data-i18n="edu2_school">FERIT, Osijek - Croatie</p>
+                        <p data-i18n="edu2_description">Cours en informatique et systèmes, ouverture internationale.</p>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="projects_title">Projets</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                        <h3 data-i18n="project1_title">Running App Android</h3>
+                        <p data-i18n="project1_description">Application mobile de tracking de course développée en Kotlin pour Android. Suivi GPS, statistiques de performance et historique des courses.</p>
+                    <div class="project-tags">
+                            <span class="skill-tag">Kotlin</span>
+                            <span class="skill-tag">Android</span>
+                            <span class="skill-tag">GPS</span>
+                        </div>
+                        <a href="https://github.com/Lucashblt/2024_RunningApp_Android" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> <span data-i18n="github_link">Voir sur GitHub</span>
+                        </a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 data-i18n="project2_title">PLStek - Angular</h3>
+                        <p data-i18n="project2_description">Application web développée avec Angular et TypeScript. Interface moderne et responsive pour la gestion de projets.</p>
+                        <div class="project-tags">
+                            <span class="skill-tag">Angular</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Web</span>
+                        </div>
+                        <a href="https://github.com/Lucashblt/2024_ANGULAR_PLStek" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> <span data-i18n="github_link">Voir sur GitHub</span>
+                        </a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 data-i18n="project3_title">Munchkin Game</h3>
+                        <p data-i18n="project3_description">Implémentation du jeu de cartes Munchkin en Java avec interface graphique et gestion multi-joueurs.</p>
+                        <div class="project-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">JavaFX</span>
+                            <span class="skill-tag">Game Dev</span>
+                        </div>
+                        <a href="https://github.com/Lucashblt/2024_Munchkin_Game" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> <span data-i18n="github_link">Voir sur GitHub</span>
+                        </a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 data-i18n="project4_title">Projet E-commerce Web</h3>
+                        <p data-i18n="project4_description">Site e-commerce complet développé en PHP avec gestion de panier, paiement et administration.</p>
+                        <div class="project-tags">
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                    </div>
+                        <a href="https://github.com/Lucashblt/2023_Web_Project_Ecommerce" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> <span data-i18n="github_link">Voir sur GitHub</span>
+                        </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact_title">Me contacter</h2>
+            <div class="contact-content">
+                <p data-i18n="contact_text">
+                    N'hésitez pas à me contacter pour toute opportunité ou collaboration.
+                </p>
+                <div class="contact-info">
+                        <a href="mailto:hublartlucas@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                            <span>hublartlucas@gmail.com</span>
+                    </a>
+                        <a href="https://www.linkedin.com/in/lucas-hublart-239127242" target="_blank" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                        <a href="https://github.com/Lucashblt" target="_blank" class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Lucas HUBLART. <span data-i18n="footer_rights">Tous droits réservés.</span></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
