@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas HUBLART - Portfolio</title>
+    <meta http-equiv="refresh" content="0; url=home.html">
+    <script>
+        window.location.replace('home.html');
+    </script>
+    <title>Redirection vers home.html</title>
+    <!-- <title>Lucas HUBLART - Portfolio</title> -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Fake Terminal Typing Animation -->
-    <div id="fake-terminal" aria-hidden="true">
+    <noscript>
+        <p>La page est en cours de redirection vers <a href="home.html">home.html</a>.</p>
+    </noscript>
+    <!-- <div id="fake-terminal" aria-hidden="true">
         <div class="terminal-bar">
             <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
             <button id="close-terminal" title="Fermer la console" aria-label="Fermer la console">&times;</button>
         </div>
         <pre id="terminal-content"><span class="typed-cursor">|</span></pre>
     </div>
-    <!-- Code Splash Overlay -->
     <div id="code-splash" aria-hidden="true"></div>
-    <!-- Language & Theme Toggle -->
     <div class="language-toggle">
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
             <i class="fas fa-sun"></i>
@@ -29,7 +34,6 @@
         </div>
     </div>
 
-    <!-- Header/Hero Section -->
     <header class="hero">
         <div class="container">
             <div class="hero-content">
@@ -44,7 +48,6 @@
         </div>
     </header>
 
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <ul class="nav-menu">
@@ -58,7 +61,6 @@
         </div>
     </nav>
 
-    <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
             <h2 class="section-title" data-i18n="about_title">À propos de moi</h2>
@@ -69,12 +71,10 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="section section-alt">
         <div class="container">
             <h2 class="section-title" data-i18n="skills_title">Compétences</h2>
             <div class="skills-grid">
-                <!-- Programming Languages -->
                 <div class="skill-category">
                     <h3 data-i18n="skills_languages">Langages de programmation</h3>
                     <div class="skill-items">
@@ -90,7 +90,6 @@
                     </div>
                 </div>
 
-                <!-- Frameworks & Tools -->
                 <div class="skill-category">
                     <h3 data-i18n="skills_frameworks">Frameworks & Technologies</h3>
                     <div class="skill-items">
@@ -105,7 +104,6 @@
                     </div>
                 </div>
 
-                <!-- Other Skills -->
                 <div class="skill-category">
                         <h3 data-i18n="skills_other">Outils & Méthodologies</h3>
                     <div class="skill-items">
@@ -121,7 +119,6 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience" class="section">
         <div class="container">
             <h2 class="section-title" data-i18n="experience_title">Expérience professionnelle</h2>
@@ -178,7 +175,6 @@
         </div>
     </section>
 
-    <!-- Education Section -->
     <section id="education" class="section section-alt">
         <div class="container">
             <h2 class="section-title" data-i18n="education_title">Formation</h2>
@@ -218,7 +214,6 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="container">
             <h2 class="section-title" data-i18n="projects_title">Projets</h2>
@@ -279,7 +274,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section section-alt">
         <div class="container">
             <h2 class="section-title" data-i18n="contact_title">Me contacter</h2>
@@ -305,15 +299,13 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Lucas HUBLART. <span data-i18n="footer_rights">Tous droits réservés.</span></p>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="translations.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js"></script> -->
 </body>
 </html>
